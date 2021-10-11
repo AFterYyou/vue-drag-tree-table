@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d203e131-7a96-4d09-999d-209b985ae10a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dtree-table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/dragTreeTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/dragTreeTable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/row.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/row.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/demo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/demo.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +132,7 @@
       <option name="presentableId" value="Default" />
       <updated>1543590887750</updated>
       <workItem from="1543590889370" duration="1432000" />
-      <workItem from="1633932602360" duration="1132000" />
+      <workItem from="1633932602360" duration="2596000" />
     </task>
     <servers />
   </component>
