@@ -40,3 +40,12 @@
 - 
 ### Removed
 - 
+
+## [2.2.1] - 2021-03-15
+### Added
+- 新增功能：组件添加 is-toggle 属性， 值为true时，点击行可折叠; false时，点击行不可折叠
+
+### Changed
+- 
+### Removed
+- 

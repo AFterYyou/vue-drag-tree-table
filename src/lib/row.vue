@@ -2,12 +2,12 @@
         <div class="tree-block" :draggable="!!isdraggable" @dragstart="dragstart($event)"
             @dragend="dragend($event)">
             <div class="tree-row"
-                @click="toggle" 
+                @click="toggle"
                 :data-level="depth"
                 :tree-id="model[custom_field.id]"
                 :tree-p-id="model[custom_field.parent_id]"
                 :class="{'highlight-row': model.highlight == true}"
-                v-bind:style="{backgroundColor: model.backgroundColor}"> 
+                v-bind:style="{backgroundColor: model.backgroundColor}">
                 <column
                     v-for="(subItem, subIndex) in columns"
                     v-bind:class="['align-' + subItem.align, 'colIndex' + subIndex]"
@@ -66,12 +66,12 @@
                     </div>
                 </div>
             </div>
-            <row 
+            <row
                 v-show="model[custom_field.open]"
-                v-for="(item, index) in model[custom_field.lists]" 
+                v-for="(item, index) in model[custom_field.lists]"
                 :model="item"
                 :columns="columns"
-                :key="index" 
+                :key="index"
                 :isdraggable="isdraggable"
                 :border="border"
                 :depth="depth * 1 + 1"
@@ -87,14 +87,14 @@
                     </template>
             </row>
         </div>
-        
+
     </template>
     <script>
     import column from './column.vue'
     import space from './space.vue'
     export default {
       name: 'row',
-        props: ['model','depth','columns','isdraggable','border', 'custom_field','onCheck','isContainChildren'],
+        props: ['model','depth','columns','isdraggable','border', 'custom_field','onCheck','isContainChildren','isToggle'],
         data() {
             return {
                 open: false,
@@ -112,7 +112,7 @@
         },
         methods: {
             toggle() {
-                if(this.isFolder) {
+                if(this.isFolder && this.isToggle) {
                     this.model[this.custom_field.open] = !this.model[this.custom_field.open];
                     this.$forceUpdate()
                 }
@@ -229,7 +229,7 @@
         visibility: hidden;
     }
     .arrow-right{
-        
+
     }
     .arrow-bottom{
         transform: rotate(90deg)
@@ -238,4 +238,3 @@
       -khtml-user-drag: element;
     }
     </style>
-    

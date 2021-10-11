@@ -11,6 +11,7 @@
       @drag="onTreeDataChange"
       resize
       fixed
+      :is-toggle="false"
       :isdraggable="true">
     <template #selection="{row}">
       {{ row.name }}
